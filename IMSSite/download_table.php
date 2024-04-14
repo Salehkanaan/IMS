@@ -22,4 +22,3 @@ while ($row = $result->fetch_assoc()) {
 
 // Close file pointer
 fclose($output);
-?>

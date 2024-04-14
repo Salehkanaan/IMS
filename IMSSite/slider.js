@@ -37,7 +37,7 @@ function upadteImg() {
     currentImg = imgsE1.length;
   }
 
- imagecontainerE.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+  imagecontainerE.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
 
   // timeout=setTimeout(()=>{currentImg++
 
@@ -46,4 +46,7 @@ function upadteImg() {
 
 function out() {
   window.location.href = "logout.php";
+}
+function login() {
+  window.location.href = "log_in.php";
 }

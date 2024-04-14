@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Product exists, retrieve available quantity
         $row = $result->fetch_assoc();
         $available_quantity = $row['quantity'];
-$location=$row['location'];
-$price=$row['price'];
+        $location = $row['location'];
+        $price = $row['price'];
         // Check if entered quantity exceeds available quantity
         if ($quantity > $available_quantity) {
             // Quantity exceeds available quantity, display an error message
@@ -39,12 +39,11 @@ $price=$row['price'];
             // Quantity is valid, proceed with inserting the transaction
             // SQL query to insert data into transactions table
             $insert_transaction_sql = "INSERT INTO transaction (pname, quantity, date, ename,price) VALUES ('$product_name', '$quantity', '$timestamp', '$username','$price')";
-            $q=$available_quantity-$quantity;
+            $q = $available_quantity - $quantity;
             $insert_update_sql = "UPDATE product SET quantity='$q' where name='$product_name' && location='$location'";
-            
+
             if ($conn->query($insert_transaction_sql) === TRUE && $conn->query($insert_update_sql) === TRUE) {
                 echo "New record created successfully";
-            
             } else {
                 echo "Error: " . $insert_transaction_sql . "<br>" . $conn->error;
             }
@@ -57,5 +56,3 @@ $price=$row['price'];
 
 // Close connection
 $conn->close();
-
-?>
