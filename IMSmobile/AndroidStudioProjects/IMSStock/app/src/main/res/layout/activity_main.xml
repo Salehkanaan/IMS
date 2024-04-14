@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:padding="10dp">
+    <TextView
+        android:background="#03A9F4"
+        android:text="Scan Your Products"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:background="@drawable/ims">
+    </TableRow>
+
+    <TableRow>
+    <EditText
+        android:drawableStart="@drawable/additional_quantity"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        android:id="@+id/edqt"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type the quantity desired" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:drawableEnd="@drawable/scan_246"
+            android:id="@+id/qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#03A9F4"
+            android:onClick="codeScanner"
+            android:text="Scan your product"
+            android:textColor="@color/white" />
+    </TableRow>
+    <ProgressBar
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pg"/>
+</TableLayout>

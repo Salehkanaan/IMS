@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">page</string>
+    <string name="ed_hint">your name</string>
+    <string name="vehicles_tv">Vehicles</string>
+    <string name="car_cb">Car</string>
+    <string name="motor_cb">Motor</string>
+    <string name="gender_tv">Gender</string>
+    <string name="male_rb">Male</string>
+    <string name="female_rb">Female</string>
+    <string name="submitbutton">Submit Buttton</string>
+</resources>

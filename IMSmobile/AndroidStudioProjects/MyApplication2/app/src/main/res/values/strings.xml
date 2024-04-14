@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="ph_text">Enter phone number</string>
+    <string name="dial">Dial</string>
+    <string name="call">Call</string>
+    <string name="photo">Take a photo</string>
+</resources>

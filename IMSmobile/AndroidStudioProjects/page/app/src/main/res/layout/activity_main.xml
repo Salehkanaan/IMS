@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <TableRow>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/nameEd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/ed_hint"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/vehicles_tv"
+            android:textColor="#00FF04"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/car"
+            android:text="@string/car_cb"
+            android:layout_weight="1"
+            android:onClick="cbFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:onClick="cbFunction"
+            android:id="@+id/motor"
+            android:layout_weight="1"
+            android:text="@string/motor_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/gender_tv"
+            android:textColor="@color/black"
+            android:textColorHint="#001F1313" />
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:onClick="rbFunction"
+                android:id="@+id/male"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_rb"
+                />
+            <RadioButton
+                android:onClick="rbFunction"
+                android:id="@+id/female"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female_rb"
+                />
+
+            </RadioGroup>
+       </TableRow>
+<TableRow>
+    <Button
+        android:onClick="submitFunction"
+        android:id="@+id/submit"
+        android:text="@string/submitbutton"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</TableRow>
+</TableLayout>

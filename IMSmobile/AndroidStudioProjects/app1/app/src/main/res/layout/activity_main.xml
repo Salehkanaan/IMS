@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingLeft="100px"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nb1Text"
+         />
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nb1"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nb2Text" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/nb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        android:onClick="addFunction"
+        android:paddingHorizontal="50px"
+        android:paddingRight="300px"
+        android:text="@string/add" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/subButton"
+        android:layout_marginBottom="100px"
+        android:text="@string/sub" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/resTv"
+        android:layout_height="wrap_content"
+        android:text=""
+         />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app1</string>
+    <string name="nb1Text">1st number</string>
+    <string name="nb2Text">2nd number</string>
+    <string name="add">Add</string>
+    <string name="sub">Subtract</string>
+</resources>

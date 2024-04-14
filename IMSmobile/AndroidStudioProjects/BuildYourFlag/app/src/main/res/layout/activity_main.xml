@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/countryNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/country_name_hint" />
+
+    <Button
+        android:id="@+id/topButton"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:onClick="topButtonFunction"
+        android:text="@string/top_text"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/middleButton"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="middleButtonFunction"
+        android:text="@string/middle_text"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="bottomButtonFunction"
+        android:text="@string/bottom_text"
+        app:cornerRadius="0dp" />
+
+
+</LinearLayout>

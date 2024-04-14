@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caloriyat"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="#3D3D3D"
+        android:layout_marginBottom="30dp"
+        />
+<TableRow
+    android:layout_marginBottom="30dp">
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Weight"
+      android:textColor="@color/black"
+      />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:hint="@string/weight_hint"
+        android:textColor="@color/black"/>
+        />
+</TableRow>
+
+
+    <TableRow
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/height"
+            android:hint="@string/height_hint"
+            android:textColor="@color/black"/>
+    </TableRow>
+    <Button
+        android:layout_marginBottom="30dp"
+        android:text="@string/b1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="@color/black"
+        android:onClick="bmiFunction"/>
+
+
+<TableRow>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/black"/>
+    <RadioGroup
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:onClick="isMale"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="@string/m_text"
+            />
+
+    <RadioButton
+        android:onClick="isMale"
+        android:checked="false"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/female"
+        android:text="@string/fm_text"/>
+</RadioGroup>
+</TableRow>
+<TableRow android:layout_marginBottom="30dp">
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</TableRow>
+    <Button
+        android:backgroundTint="#E0E0E0"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b2_text"
+        android:onClick="calFunction" />
+</TableLayout>

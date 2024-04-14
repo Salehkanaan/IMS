@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:background="#03A9F4"
+        android:text="Welcome To Our Stock"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:background="@drawable/ims"
+        android:layout_marginBottom="50dp">
+    </TableRow>
+
+<TableRow
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#03A9F4"
+    android:text="Name" />
+
+    <EditText
+        android:drawableEnd="@drawable/baseline_account_circle_24"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type your name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black" />
+
+</TableRow>
+   <TableRow
+       android:layout_marginLeft="10dp"
+       android:layout_marginBottom="20dp">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#03A9F4"
+        android:text="Password"/>
+    <EditText
+        android:drawableEnd="@drawable/baseline_password_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type your password"
+        android:textColorHint="@color/black"
+        android:id="@+id/pass"
+        android:textColor="@color/black" />
+   </TableRow>
+    <CheckBox
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rememberChb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#03A9F4"
+        android:text="Remember me" />
+
+
+
+    <TableRow android:layout_marginLeft="100dp">
+        <Button
+
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/Sub"
+            android:backgroundTint="#03A9F4"
+            android:onClick="Submit"
+            android:textColor="@color/white" />
+</TableRow>
+
+    <TextView
+        android:drawableLeft="@drawable/baseline_report_gmailerrorred_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log"
+        android:layout_marginRight="80dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Forgot password?"
+        android:textColor="#03A9F4"/>
+
+</TableLayout>

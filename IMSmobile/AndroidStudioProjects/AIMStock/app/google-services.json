@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1038210614899",
+    "project_id": "pushnotificationproject-43805",
+    "storage_bucket": "pushnotificationproject-43805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038210614899:android:d7a7b6633221eb4c254c06",
+        "android_client_info": {
+          "package_name": "com.example.aimstock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn3Y7LIkv3WagycGsOXtVPvFwn9lif_PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

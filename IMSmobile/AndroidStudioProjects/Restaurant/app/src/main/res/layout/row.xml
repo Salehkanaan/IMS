@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/nameTv"
+            android:textSize="18dp"
+            android:text="Dishname"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/typeTv"
+            android:textSize="14dp"
+            android:text="DishType"
+            android:textColor="@android:color/darker_gray"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:background="@android:drawable/ic_menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/priceTv"
+            android:textSize="16dp"
+            android:text="DishPrice"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+</TableLayout>
