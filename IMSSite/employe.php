@@ -4,7 +4,7 @@
 session_start();
 if (isset($_SESSION['loggedin'])) {
     $username = $_SESSION['username'];
-    echo "  <h2>Welcome $username</h2>";
+    echo "  <h2 class=head>Welcome $username</h2>";
     // Display the username
 
 } else {
@@ -37,7 +37,7 @@ if (isset($_SESSION['loggedin'])) {
     </nav>
     <div class="not">
         <div class="container">
-            <h1>Employee Dashboard</h1>
+            <h1 class="head">Employee Dashboard</h1>
         </div>
         <table id="productTable">
             <!-- Rest of your page content -->
@@ -97,8 +97,8 @@ if (isset($_SESSION['loggedin'])) {
         }
 
 
-        ?> <form method="post">
-            <button name="send_notification">
+        ?> <br/><form method="post">
+            <button name="send_notification" class="sub3">
                 Go to Retrieval Page</button>
         </form>
     </div>

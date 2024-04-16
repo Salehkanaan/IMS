@@ -24,9 +24,11 @@ if ($result->num_rows > 0) {
 
         // Determine the status based on quantity
         if ($row["quantity"] < 5) {
-            echo '<button style="background-color: red;">Low Quantity</button>';
+            echo '<button style="background-color: red;box-shadow: 2px 2px 20px #524c40;
+            border-radius: 10px 10px;color:white; border-style: none;">Low Quantity</button>';
         } else {
-            echo '<button style="background-color: green;">Sufficient Quantity</button>';
+            echo '<button style="background-color: green;box-shadow: 2px 2px 20px #524c40;
+            border-radius: 10px 10px;color:white; border-style: none;">Sufficient Quantity</button>';
         }
 
         echo "</td></tr>";

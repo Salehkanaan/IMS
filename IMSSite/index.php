@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <nav class="navbar">
         <div class="container">
             <a class="logo" href="index.php">Stock Management</a>
