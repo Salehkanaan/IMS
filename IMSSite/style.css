@@ -8,30 +8,28 @@ body {
 }
 
 /*Nav*/
-.logo:hover {
-  color: #ff9900
-}
-
 .navbar {
   background-color: rgb(0, 195, 230);
   color: #fff;
-  padding-left: 10px;
+  padding: 10px 0;
   border-radius: 10px;
   margin-bottom: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .logo {
   margin: 0;
   text-decoration: none;
-  font-size: 20pt;
+  font-size: 24px;
   color: white;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -53,6 +51,8 @@ body {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .nav-links a:hover {
@@ -60,9 +60,12 @@ body {
 }
 
 /*Login*/
+
+
 .title {
   color: rgb(0, 195, 230);
   text-align: center;
+  margin-bottom: 20px; 
 }
 
 .txt {
@@ -73,6 +76,13 @@ body {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 15%;
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add spacing between inputs */
+  box-sizing: border-box;
 }
 
 .head {
@@ -88,27 +98,38 @@ body {
 }
 
 .bord {
-  border-radius: 10%;
+
   max-width: max-content;
   margin-left: 40%;
-  box-shadow: 2px 2px 20px #524c40;
+  box-shadow: 2px 2px 20px #000000;
+
+  border-radius: 10px; /* Rounded corners */
+  max-width: 400px; /* Limit width for better readability */
+  padding: 20px; /* Add padding inside the container */
+ 
 }
 
+
+.form input {
+    width: 100%; /* Take up full width */
+}
 .sub1 {
+ box-shadow: 2px 2px 20px #524c40;
   min-width: 20%;
-  margin-left: 40%;
-  border-style: none;
-  transition: transform 0.3s;
-  background-color: rgb(0, 195, 230);
-  height: 30px;
-  box-shadow: 2px 2px 20px #524c40;
-  border-radius: 10px 10px;
-  color: white;
+    width: 100%; /* Take up full width */
+    padding: 10px;
+    border: none;
+    transition: transform 0.3s;
+    background-color: rgb(0, 195, 230); /* Blue color */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
 
 .sub1:hover {
-  transform: scale(1.1);
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
+
 
 .sub2 {
   width: 10%;
@@ -143,28 +164,42 @@ body {
   transform: scale(1.1);
 }
 
-/*search*/
+
 #select {
   border-radius: 10px;
   color: white;
-  padding: 2px;
+  padding: 10px;
   background-color: rgb(0, 195, 230);
+  border: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#select:hover {
+  background-color: rgba(0, 195, 230, 0.8);
 }
 
 #search {
-  color: blue;
+  color: rgb(0, 195, 230);
   font-weight: bold;
   outline: none;
   border-radius: 10px;
   margin-left: 10%;
   margin-bottom: 2%;
-  padding: 2px;
+  padding: 10px;
+  border: 2px solid rgb(0, 195, 230);
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-#search::marker {
-  color: blue;
-  margin-left: 10%;
-  outline: none;
+#search::placeholder {
+  color: rgba(0, 195, 230, 0.7);
+}
+
+#search:focus {
+  border-color: rgb(0, 189, 202);
+  color: rgb(0, 189, 202);
 }
 
 
@@ -183,23 +218,21 @@ body {
 
 
 
-
-
-
-/*table */
 table {
   margin-left: 10%;
   background-color: transparent;
-  padding: 50px;
+  padding: 20px;
   font-weight: bold;
-  width: 50%;
+  width: 80%;
   color: rgb(0, 189, 202);
   border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th,
 td {
-  padding: 8px;
+  padding: 12px;
   text-align: left;
   border-bottom: 2px solid rgb(0, 189, 202);
 }
@@ -211,12 +244,21 @@ th {
 
 /*total price and quantity*/
 .pr td {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(0, 195, 230);
-  font-size: large;
-
 }
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: rgba(0, 195, 230, 0.1);
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 195, 230, 0.3);
+}
+
+
 
 .man {
   color: rgb(0, 195, 230);
@@ -263,12 +305,13 @@ h1 {
 
 .slider-container {
   position: relative;
-  width: 400px;
+  width: 100%; /* Adjusted to take full width */
+  max-width: 800px; /* Limiting the maximum width */
   height: 300px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-left: 30rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soften the shadow */
+  margin: 0 auto; /* Center align horizontally */
 }
 
 #image-container {
@@ -278,25 +321,30 @@ h1 {
 
 .btn {
   position: absolute;
-  top: 70%;
+  top: 50%;
   transform: translateY(-50%);
-  opacity: 50%;
+  opacity: 0.5; /* Adjusted initial opacity */
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8); /* Reduced opacity for better blending */
+  font-size: 24px; /* Slightly reduced font size */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Added padding for better touch target */
+  border-radius: 50%; /* Rounded buttons */
+  transition: opacity 0.3s; /* Smooth opacity transition */
 }
 
 .btn:hover {
-  opacity: 1;
+  opacity: 0.9; /* Adjusted hover opacity */
 }
 
 .btn.prev {
-  left: 10px;
+  left: 20px; /* Increased left margin */
 }
 
 .btn.next {
-  right: 10px;
+  right: 20px; /* Increased right margin */
 }
+
 
 .footer p {
   text-align: left;

@@ -49,9 +49,9 @@ if (isset($sub)) {
 <body>
     <nav class="navbar">
         <div class="container">
-            <a class="logo" href="index.php">Stock Management</a>
+            <a class="logo" href="index.html">Stock Management</a>
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="faq.php">FAQ</a></li>
                 <li><a href="logout.php">LogOut</a></li>

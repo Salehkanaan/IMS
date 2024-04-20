@@ -4,7 +4,7 @@ $user="sql6692867";
 $password="cu8mVDprys";
 $db = "sql6692867";
 
-$con = mysqli_connect($server,$user,$password,$db);
+$conn = mysqli_connect($server,$user,$password,$db);
 if (mysqli_connect_errno())
 {
  echo mysqli_connect_error();

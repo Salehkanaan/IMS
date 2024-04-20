@@ -26,9 +26,9 @@ if (isset($_SESSION['loggedin'])) {
 <body>
     <nav class="navbar">
         <div class="container">
-            <a class="logo" href="index.php">Stock Management</a>
+            <a class="logo" href="index.html">Stock Management</a>
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="faq.php">FAQ</a></li>
                 <li><a href="logout.php">LogOut</a></li>
@@ -88,7 +88,8 @@ if (isset($_SESSION['loggedin'])) {
             curl_close($ch);
         }
         if (isset($_POST['send_notification'])) {
-            $to = "et_4GmrfQ4qBajNcMCszis:APA91bFaQPSH39I3RuT2jyzjZ-4S_XLznshmD9gkvPhgCV9qHmvhLv3c4B6MlW4Q5CQLmqokWLBh6cDPZNpSGR1kbzduJaFcbWdj2wppghLTd5J6rs3hjrpfxbr5aBUrnGqMo9x_j8p0";
+            $to = "et_4GmrfQ4qBajNcMCszis:APA91bFaQPSH39I3RuT2jyzjZ-4S_XLznshmD9gkvPhgCV9qHmvhLv3c4B6MlW4Q5CQLmqokWLBh6cDPZNpSGR1kbzduJaFcbWdj2wppghLTd5J6rs3hjrpfxbr5aBUrnGqMo9x_j8p0
+            ";
             $title = "greeting";
             $body = "You have a product to retrieve";
             $image = 'https://www.trianglemarketingclub.com/wp-content/uploads/2018/10/IMS-Logo-Picton-Blue.png';

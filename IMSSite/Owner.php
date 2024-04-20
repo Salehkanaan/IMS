@@ -19,9 +19,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["username"] != "admin") {
 <body id="tableContainer">
     <nav class="navbar">
         <div class="container">
-            <a class="logo" href="Owner.php">Stock Management</a>
+            <a class="logo" href="Owner.html">Stock Management</a>
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="charts.php">Analytics</a></li>
                 <li><a href="download_table.php">Dowload Report</a></li>
