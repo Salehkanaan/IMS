@@ -38,8 +38,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["username"] != "admin") {
             <option>Product-Name</option>
             <option>Date</option>
         </select>
-        <table>
+       
             <?php
+           
             $tp = 0;
             $tq = 0;
             $sql = "";
@@ -56,11 +57,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["username"] != "admin") {
                     $err = "Type the correct product name.";
                 } else if ($selectedOption == "Date") {
                     $sql = " SELECT * FROM transaction WHERE date LIKE '%$text%' order by quantity;";
-                    $err = "Type the date in the following format:(Year/month/Day)";
+                    $err = "Type the date in the following format:(Year-month-Day)";
                 }
                 $res = mysqli_query($conn, $sql); /*quering code function*/
                 $check = mysqli_num_rows($res);
-                echo " <thead>
+                if ($check > 0) {
+                    echo" <table>
+                  <thead>
                 <tr>
                     <th>Employee Name </th>
                     <th>Product Name</th>
@@ -70,7 +73,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["username"] != "admin") {
                 </tr>
             </thead>
             <tbody>";
-                if ($check > 0) {
                     while ($row = mysqli_fetch_assoc($res)) {
 
                         $ename = $row['ename'];

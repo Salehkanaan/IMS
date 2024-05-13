@@ -37,7 +37,7 @@ function upadteImg() {
     currentImg = imgsE1.length;
   }
 
-  imagecontainerE.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+  imagecontainerE.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
 
   // timeout=setTimeout(()=>{currentImg++
 

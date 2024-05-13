@@ -13,10 +13,10 @@ $conn = mysqli_connect($host, $user, $password, $db);
     die("Connection failed: " . mysqli_connect_error());
   }*/
 
-$server="sql6.freesqldatabase.com";
-$user="sql6692867";
-$password="cu8mVDprys";
-$db = "sql6692867";
+$server="localhost";
+$user="id22050951_imsite";
+$password="Imsite@2024";
+$db = "id22050951_ims";
 
 $conn = mysqli_connect($server,$user,$password,$db);
 if (mysqli_connect_errno())

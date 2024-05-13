@@ -37,7 +37,7 @@ if (isset($_SESSION['loggedin'])) {
     </nav>
     <div class="not">
         <div class="container">
-            <h1 class="head">Employee Dashboard</h1>
+            <h1 class="head1">Employee Dashboard</h1>
         </div>
         <table id="productTable">
             <!-- Rest of your page content -->
@@ -63,7 +63,10 @@ if (isset($_SESSION['loggedin'])) {
                 'body' => $body,
                 'image' => $image
             );
-            $api_key = "AAAA8SttU5E:APA91bH2Y_MZbegEdrGYxhd7efP50t2ia04XvQMh_VO2rW-gQSFY5A89o7_GNQjBl9jL8wM22SFZP_3GPD_Mpf_sDbNOv3G6ReYWHdykRRTnLwjFEn68Ci9tT9_BkoxbC-B0_2Toxl-y";
+            $api_key = "
+            
+            
+            AAAA8SttU5E:APA91bH2Y_MZbegEdrGYxhd7efP50t2ia04XvQMh_VO2rW-gQSFY5A89o7_GNQjBl9jL8wM22SFZP_3GPD_Mpf_sDbNOv3G6ReYWHdykRRTnLwjFEn68Ci9tT9_BkoxbC-B0_2Toxl-y";
             $url = "https://fcm.googleapis.com/fcm/send";
             $fields = json_encode(array('to' => $to, 'notification' => $data));
 
@@ -76,7 +79,7 @@ if (isset($_SESSION['loggedin'])) {
             curl_setopt($ch, CURLOPT_POSTFIELDS, ($fields));
 
             $headers = array();
-            $headers[] = 'Authorization: key =' . $api_key;
+            $headers[] = 'Authorization: key =' .$api_key;
             $headers[] = 'Content-Type: application/json';
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
@@ -88,8 +91,8 @@ if (isset($_SESSION['loggedin'])) {
             curl_close($ch);
         }
         if (isset($_POST['send_notification'])) {
-            $to = "et_4GmrfQ4qBajNcMCszis:APA91bFaQPSH39I3RuT2jyzjZ-4S_XLznshmD9gkvPhgCV9qHmvhLv3c4B6MlW4Q5CQLmqokWLBh6cDPZNpSGR1kbzduJaFcbWdj2wppghLTd5J6rs3hjrpfxbr5aBUrnGqMo9x_j8p0
-            ";
+            $to = "et_4GmrfQ4qBajNcMCszis:APA91bFaQPSH39I3RuT2jyzjZ-4S_XLznshmD9gkvPhgCV9qHmvhLv3c4B6MlW4Q5CQLmqokWLBh6cDPZNpSGR1kbzduJaFcbWdj2wppghLTd5J6rs3hjrpfxbr5aBUrnGqMo9x_j8p0";
+        
             $title = "greeting";
             $body = "You have a product to retrieve";
             $image = 'https://www.trianglemarketingclub.com/wp-content/uploads/2018/10/IMS-Logo-Picton-Blue.png';

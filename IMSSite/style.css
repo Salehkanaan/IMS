@@ -4,6 +4,7 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   background-color: white;
+  background-image: url("./img/Bg.jpg");
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,7 +17,9 @@ body {
   margin-bottom: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+#barchart_material{
+  margin-left: 10%;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -88,24 +91,31 @@ body {
 .head {
   text-align: center;
   color: rgb(0, 195, 230);
-  font-size: 12pt;
+  font-size: 15pt;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.head1 {
+  margin-left: 20%;
+  text-align: center;
+  color: rgb(0, 195, 230);
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .form input {
   width: 20rem;
 }
 
 .bord {
-
+background-color: white;
   max-width: max-content;
-  margin-left: 40%;
+  margin-left: 20%;
   box-shadow: 2px 2px 20px #000000;
 
   border-radius: 10px; /* Rounded corners */
-  max-width: 400px; /* Limit width for better readability */
-  padding: 20px; /* Add padding inside the container */
+  max-width: 600px; /* Limit width for better readability */
+  padding: 40px; /* Add padding inside the container */
  
 }
 
@@ -134,7 +144,7 @@ body {
 .sub2 {
   width: 10%;
   min-width: 10%;
-  margin-left: 50%;
+  margin-left: 45%;
   border-style: none;
   transition: transform 0.3s;
   background-color: rgb(0, 195, 230);
@@ -306,7 +316,7 @@ h1 {
 .slider-container {
   position: relative;
   width: 100%; /* Adjusted to take full width */
-  max-width: 800px; /* Limiting the maximum width */
+  max-width: 600px; /* Limiting the maximum width */
   height: 300px;
   overflow: hidden;
   border-radius: 20px;
@@ -330,7 +340,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 10px; /* Added padding for better touch target */
   border-radius: 50%; /* Rounded buttons */
-  transition: opacity 0.3s; /* Smooth opacity transition */
+  transition: opacity 0.4s; /* Smooth opacity transition */
 }
 
 .btn:hover {
@@ -338,11 +348,11 @@ h1 {
 }
 
 .btn.prev {
-  left: 20px; /* Increased left margin */
+  left: 25px; /* Increased left margin */
 }
 
 .btn.next {
-  right: 20px; /* Increased right margin */
+  right: 25px; /* Increased right margin */
 }
 
 
