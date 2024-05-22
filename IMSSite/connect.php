@@ -14,9 +14,9 @@ $conn = mysqli_connect($host, $user, $password, $db);
   }*/
 
 $server="localhost";
-$user="id22050951_imsite";
-$password="Imsite@2024";
-$db = "id22050951_ims";
+$user="root";
+$password="";
+$db = "test";
 
 $conn = mysqli_connect($server,$user,$password,$db);
 if (mysqli_connect_errno())
