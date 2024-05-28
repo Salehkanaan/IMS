@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkItem (String p, String l){
 
-        String url = "http://192.168.17.115/quantity.php?name=" +p+ "&location=" + l ;
+        String url = "http://192.168.184.115/quantity.php?name=" +p+ "&location=" + l ;
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request = new StringRequest(
                 Request.Method.GET, url,
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
     public void addItem (String p, String l,int q){
         String price=sp.getString("price","");
         pg.setVisibility(View.VISIBLE);
-        String url = "http://192.168.17.115/additem.php?name=" +p+"&price="+price+ "&location=" + l + "&quantity=" + q;
+        String url = "http://192.168.184.115/additem.php?name=" +p+"&price="+price+ "&location=" + l + "&quantity=" + q;
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void updtItem (String p, String l,int q){
         pg.setVisibility(View.VISIBLE);
-        String url =  "http://192.168.17.115/updtitem.php?name=" +p + "&location=" + l + "&quantity=" + q;
+        String url =  "http://192.168.184.115/updtitem.php?name=" +p + "&location=" + l + "&quantity=" + q;
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

@@ -102,7 +102,7 @@ log.setOnClickListener(new View.OnClickListener() {
                     String timeformat="MM/dd/yy";
                     Date d= Calendar.getInstance().getTime();
                     String date=DateFormat.format(timeformat,d).toString();
-                        String url = "http://192.168.17.115/login.php?name=" +username + "&pass=" + password ;
+                        String url = "http://192.168.184.115/login.php?name=" +username + "&pass=" + password ;
                         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                         StringRequest request = new StringRequest(Request.Method.GET, url,
                                 new Response.Listener<String>() {
@@ -161,7 +161,7 @@ log.setOnClickListener(new View.OnClickListener() {
 
     public void updtDate (String date,String nam){
 
-        String url =  "http://192.168.17.115/updtdate.php?date=" +date+"&name="+nam;
+        String url =  "http://192.168.184.115/updtdate.php?date=" +date+"&name="+nam;
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

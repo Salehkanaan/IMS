@@ -111,7 +111,7 @@ if (isset($_SESSION['loggedin'])) {
                 }
             };
             // Include the location value in the request URL
-            xhr.open("GET", "http://192.168.1.10/submit?location=" + encodeURIComponent(location));
+            xhr.open("GET", "http://192.168.184.19/submit?location=" + encodeURIComponent(location));
             xhr.send();
         };
         //192.168.1.10

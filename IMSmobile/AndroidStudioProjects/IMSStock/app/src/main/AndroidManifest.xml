@@ -20,11 +20,7 @@
         android:theme="@style/Theme.AIMStock"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".PassF"
-            android:exported="true"
-            android:label="@string/pass_name"
-            android:theme="@style/Theme.AIMStock" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
